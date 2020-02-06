@@ -1,10 +1,12 @@
 <html>
 <head>
+</head>
 	<div align="center">
 	<div style="background-color: #C0C0C0;width:30%;align:center;margin:110px;padding: 10px;border-radius: 10px;">
 	<body align="justify"><br>
 		<h2 style="color: #4169E1;">User Registration</h2><br>
-		<form action="http://127.0.0.1:8000/auth/registration/" method="post" align="center">
+		<form action="{% url 'rest_register' %}" method="post" align="center">{% csrf_token %}
+
           <lable>Username :</lable> 
           <input type="text" name="username" placeholder="Enter Username"><br><br>
           <lable>Email :</lable> 

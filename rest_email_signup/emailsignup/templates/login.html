@@ -4,7 +4,7 @@
 	<div style="background-color:#C0C0C0;width:30%;align:center;margin:110px;padding: 10px;border-radius: 10px;">
 	<body align="justify"><br>
 		<h2 style="color: #4169E1;">User Login</h2><br>
-		<form action="http://127.0.0.1:8000/auth/login/" method="post" align="center">
+		<form action="{% url 'rest_login' %}" method="post" align="center">
           <lable>Username :</lable> 
           <input type="text" name="username" placeholder="Enter Username"><br><br>
           <lable>Email :</lable> 
